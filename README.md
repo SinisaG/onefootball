@@ -35,11 +35,11 @@ For running this project, you will need
  - To prepare for distribution we just need to run : ``` grunt ```
  - If we want to run it, to see how it looks, we can do ``` grunt serve:dist ```
 
-###Optimization on packiging
+###Optimization on packaging
 
 Reads index.html for usemin blocks and does concat and uglify on javascript and cssmin on css files.
 
-### Further optimisation
+### Further optimization
 
 We could also lazy load images, so that we only fetch image when it's visible.
 Also make sure that what can be is served from CDN. 
