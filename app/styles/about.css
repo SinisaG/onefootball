@@ -1,0 +1,43 @@
+.single-player-img{
+    max-width: 150px;
+    margin-top:5px;
+    margin-bottom: 30px;
+    border:1px solid white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.single-player-number{
+
+    font-size: 24px;
+    color:#c03;
+    line-height: 36px;
+    margin-top:15px;
+    font-family: "BrandonG700";
+}
+
+.stats-title{
+    color:#c03;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "BrandonG700";
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.stats-item{
+    padding:5px 0;
+    color:white;
+    font-size: 14px;
+}
+
+.player-bio-container{
+    padding:60px 0;
+}
+
+.player-bio-item-emphasis{
+    font-size:18px;
+    text-decoration: underline;
+}

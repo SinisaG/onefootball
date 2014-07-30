@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <div class="inner-addon left-addon">
+            <i class="glyphicon glyphicon-search"></i>
+            <input type="text" class="form-control search-field" placeholder="Search player..." ng-model="query">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 col-lg-4 col-sm-6  col-xs-12" ng-repeat="player in team.players | filter:query">
+        <div class="player-card">
+            <a href="#/about/{{player.id}}">
+                <div class="player-number text-center">{{"#" + player.number}}</div>
+            </a>
+            <a href="#/about/{{player.id}}">
+                <img class="player-img" fallback-src="http://images.iliga.de/default/default_player.png" ng-src ="{{player.thumbnailSrc}}" alt = "{{player.firstName + ' ' + player.lastName}}"/>
+            </a>
+            <div class="text-center player-detail player-name">
+                {{player.firstName}} <br> {{player.lastName}}
+            </div>
+            <div class="text-center player-detail">{{player.birthDate}}</div>
+            <div class="text-center player-detail">{{player.country}}</div>
+        </div>
+    </div>
+</div>

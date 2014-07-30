@@ -1,0 +1,94 @@
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+/* Custom page footer */
+.footer {
+  margin-top: 40px;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+.position-relative{
+    position:relative;
+}
+
+body{
+    background-color: #333;
+    font-family: "BrandonG400";
+    letter-spacing: 0.1em;
+    min-width: 320px;
+}
+
+.logo{
+    max-width:50px;
+    margin:20px 20px 20px 0;
+}
+
+.player-card{
+    width:65%;
+    background-color:#c03;
+    display:block;
+    margin:20px auto;
+    padding:20px 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0px 0px 4px 2px rgba(51,51,51,0.8);
+    -moz-box-shadow: inset 0px 0px 4px 2px rgba(51,51,51,0.8);
+    box-shadow: inset 0px 0px 4px 2px rgba(51,51,51,0.8);
+}
+
+.player-img{
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border:1px solid white;
+    box-sizing: content-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.search-field{
+    margin-top: 20px;
+}
+
+.player-number{
+    font-family: "BrandonG700";
+    font-size: 28px;
+    margin:0 0 20px 0;
+    color:white;
+}
+
+.player-name{
+    font-size: 16px;
+}
+
+
+
+.inner-addon {
+    position: relative;
+    padding-bottom: 10px;
+}
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 8px;
+    pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/*bootstrap rows nesting fix*/
+.row  .row {
+    margin: 0px 0px;
+}

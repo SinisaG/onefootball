@@ -1,0 +1,223 @@
+<div class="row">
+    <div class="col-md-2 col-lg-2 col-sm-3 col-xs-6">
+        <div class="single-player-number">#{{player.number}}</div>
+        <img ng-src="{{player.thumbnailSrc}}" fallback-src="http://images.iliga.de/default/default_player.png" class="single-player-img"/>
+    </div>
+    <div class="col-md-10 col-lg-10 col-sm-9 col-xs-6">
+        <div class="player-bio-container">
+            <div class="stats-item player-bio-item-emphasis">{{player.firstName}} {{player.lastName}}</div>
+            <div class="stats-item">{{player.position}}</div>
+            <div class="stats-item">{{player.age}} years</div>
+            <div class="stats-item">{{player.height}} cm</div>
+            <div class="stats-item">{{player.weight}} kg</div>
+        </div>
+    </div>
+</div>
+
+<div class="row" ng-if="player.stats">
+    <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+        <div class="stats-title">
+            Defense
+        </div>
+        <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item">
+                    Total tackles:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item ">
+                    {{player.stats.totalTackles}}
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Interceptions:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.interceptions}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Tackles won:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.tacklesWon}}
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Yellow cards:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.yellowCards}}
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Clearances:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.clearances}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Aerial duels won:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.aerialDuelsWon}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Fouls:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.foulsConceded}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Dueals won:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.duelsWon}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Red cards:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.redCards}}
+                </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+        <div class="stats-title">
+            Offense
+        </div>
+        <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Passing accuracy:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.passingAccuracy}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Total crosses:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.totalCrosses}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Header golas:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.headedGoals}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Total passes:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.totalPasses}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Total shots:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.totalShots}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Other goals:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.otherGoals}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Shots on target:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.shotsOnTarget}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Left foot goal:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.leftFootGoals}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Right foot goals:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.rightFootGoals}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Goals inside box:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.goalsFromInsideBox}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Assists:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.assists}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Goals:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.goals}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Successfull crosses:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.successfulCrosses}}
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    Goals outside of the box:
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                    {{player.stats.goalsFromOutsideBox}}
+                </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
+        <div class="stats-title">
+            Other stats
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                Minutes played:
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                {{player.stats.minutesPlayed}}
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                Minutes per goal:
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                {{player.stats.minutesPerGoal}}
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                Starts:
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                {{player.stats.starts}}
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                Substitution off:
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                {{player.stats.substitutionOff}}
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                Games played:
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                {{player.stats.gamesPlayed}}
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                Substitution on:
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 stats-item  ">
+                {{player.stats.substitutionOn}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" ng-if="!player.stats">
+    <div class="col-lg-12">
+        <div class="stats-title">
+            No stats available - :(
+        </div>
+    </div>
+</div>
