@@ -19,10 +19,10 @@ onefootball
 
 For running this project, you will need
 
--- [Node](http://nodejs.org/)
--- [NPM] (https://www.npmjs.org/)
--- [Grunt] (http://gruntjs.com/)
--- [Bower] (http://bower.io/)
+ - [Node](http://nodejs.org/)
+ - [NPM] (https://www.npmjs.org/)
+ - [Grunt] (http://gruntjs.com/)
+ - [Bower] (http://bower.io/)
 
 ### Running the project locally
 
